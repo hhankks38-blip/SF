@@ -1,0 +1,172 @@
+import requests, webbrowser
+import threading, os
+import random, time
+os.system('pip install pyfiglet')
+import pyfiglet
+
+# ═══════════ الألوان البنفسجية ═══════════
+P = '\033[1;35m'   # بنفسجي فاتح (أساسي)
+P1 = '\033[2;35m'  # بنفسجي غامق
+P2 = '\033[38;5;135m'  # بنفسجي متوسط
+P3 = '\033[38;5;93m'   # بنفسجي عميق
+P4 = '\033[38;5;171m'  # بنفسجي وردي
+W = '\033[1;37m'   # أبيض
+R = '\033[1;31m'   # أحمر (للتحذير)
+G = '\033[1;32m'   # أخضر (للنجاح)
+
+os.system('clear')
+
+# ═══════════════════════════════════════════════
+#              🎨 اللوكو الرئيسي 🎨
+# ═══════════════════════════════════════════════
+def logo():
+    os.system('clear')
+    # لوكو Mikel بشكل كبير
+    mikel_logo = pyfiglet.figlet_format("MIKEL", font="slant")
+    
+    print(P1 + "═" * 72)
+    print()
+    # طباعة اللوكو حرف بحرف (تأثير حركي)
+    for line in mikel_logo.split('\n'):
+        print(P + line.center(72))
+        time.sleep(0.15)
+    
+    print(P1 + "═" * 72)
+    print(P2 + "           💜 TikTok Username Hunter 💜".center(72))
+    print(P1 + "═" * 72)
+    print()
+    
+    # معلومات المطور
+    time.sleep(0.3)
+    print(P3 + "           ╔══════════════════════════════════╗")
+    time.sleep(0.2)
+    print(P3 + "           ║" + P4 + "   👑 Programmer : Mikel          " + P3 + "║")
+    time.sleep(0.2)
+    print(P3 + "           ║" + P4 + "   📡 Channel    : ZVBZBZB2       " + P3 + "║")
+    time.sleep(0.2)
+    print(P3 + "           ║" + P4 + "   🎯 Target     : TikTok Users   " + P3 + "║")
+    time.sleep(0.2)
+    print(P3 + "           ║" + P4 + "   ⚡ Threads    : 7              " + P3 + "║")
+    time.sleep(0.2)
+    print(P3 + "           ╚══════════════════════════════════╝")
+    print()
+    print(P1 + "═" * 72)
+    print()
+
+logo()
+
+# ═══════════════════════════════════════════════
+#              معلومات الأداة
+# ═══════════════════════════════════════════════
+def azz():
+    azro = f"""
+****************************
+\033[2;39m
+{P}| The programmer |{W} Mikel
+{P}| chaneel | {W}https://t.me/ZVBZBZB2
+{P}| a tool {P2} صيد يوزرات تيك توك
+{P}| comments {R}٪50 يوزرات محظوره
+\033[2;39m
+****************************
+"""
+    for azr in azro.splitlines():
+        time.sleep(0.3)
+        print(azr)
+
+azz()
+
+ID = input(f'{P3}• 🆔 • : ' + P)
+token = input(f'{P3}• Token • : ' + P)
+os.system('clear')
+
+# إعادة طباعة اللوكو المصغر بعد الإدخال
+print(P1 + "═" * 72)
+print(P + pyfiglet.figlet_format("MIKEL", font="small").center(72))
+print(P1 + "═" * 72)
+print()
+
+# ═══════════════════════════════════════════════
+#              الوظائف الرئيسية
+# ═══════════════════════════════════════════════
+def user():
+    while True:
+        v1 = ''.join(random.choice('1234567890qwertyuiopasdfghjklzxcvbnm') for i in range(1))
+        v2 = ''.join(random.choice('1234567890qwertyuiopasdfghjklzxcvbnm') for i in range(1))
+        v3 = ''.join(random.choice('1234567890qwertyuiopasdfghjklzxcvbnm') for i in range(1))
+        v4 = ''.join(random.choice('1234567890qwertyuiopasdfghjklzxcvbnm') for i in range(1))
+        v5 = ''.join(random.choice('._') for i in range(1))
+        v6 = ''.join(random.choice('_') for i in range(1))
+        all = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        simm = random.choice(all)
+        defr = random.choice(all.replace(simm, ''))
+        stru = simm * (6 - 1) + defr
+        hh = ''.join(random.sample(stru, 6))
+        ah = v6 + v1 + v2 + v5 + v3
+        mk = v1 + v2 + v3 + v4 + v6
+        yt = v2 + v5 + v3 + v4 + v1
+        ad = v2 + v3 + v5 + v4 + v2
+        djf = (ah, mk, yt, ad)
+        user = random.choice(djf)
+        TikTok(user)
+
+def TikTok(user):
+    try:
+        headers = {
+            "Host": "www.tiktok.com",
+            "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"",
+            "sec-ch-ua-mobile": "?1",
+            "sec-ch-ua-platform": "\"Android\"",
+            "upgrade-insecure-requests": "1",
+            "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Plume L2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36",
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "sec-fetch-site": "none",
+            "sec-fetch-mode": "navigate",
+            "sec-fetch-user": "?1",
+            "sec-fetch-dest": "document",
+            "accept-language": "en-US,en;q=0.9,ar-DZ;q=0.8,ar;q=0.7,fr;q=0.6,hu;q=0.5,zh-CN;q=0.4,zh;q=0.3"
+        }
+
+        response = requests.get(f'https://www.tiktok.com/@{user}', headers=headers)
+        tikinfo = response.text
+        getting = tikinfo.split('webapp.user-detail"')[1].split('"RecommendUserList"')[0]
+        user_id = getting.split('id":"')[1].split('",')[0]
+        followers = getting.split('followerCount":')[1].split(',"')[0]
+        following = getting.split('followingCount":')[1].split(',"')[0]
+        # مستخدم محظور → بنفسجي غامق
+        print(f"{P3}║ BAD USER {P1}║ {user} {P3}║ @Mikel")
+
+    except (KeyError, IndexError):
+        # يوزر متاح → بنفسجي وردي
+        print(f"{P4}╔══════════════════════════════════════════════════╗")
+        print(f"{P4}║ {W}✅ GOOD USERNAME : {P}{user}")
+        print(f"{P4}║ {W}🔗 https://t.me/ZVBZBZB2")
+        print(f"{P4}╚══════════════════════════════════════════════════╝")
+        tlg = f'''
+🔥 صيد يوزرات مميزه 🔥
+__________________Mikel_________________
+
+USER : {user}
+
+__________________Mikel________________
+قناتي تلي https://t.me/ZVBZBZB2 🔥
+يوزري @Mikel1d 🥶
+'''
+        requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={tlg}')
+    except requests.exceptions.ConnectionError:
+        print(f"{R}⚠ STOP VPN")
+
+# ═══════════════════════════════════════════════
+#              تشغيل الثريدات
+# ═══════════════════════════════════════════════
+print(P2 + "🚀 Starting 7 threads..." + P)
+print(P1 + "═" * 72)
+time.sleep(1)
+
+Threads = []
+for _ in range(7):
+    t = threading.Thread(target=user)
+    t.start()
+    Threads.append(t)
+
+for thread in Threads:
+    thread.join()
