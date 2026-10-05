@@ -42,7 +42,7 @@ def logo():
     time.sleep(0.2)
     print(P3 + "           ║" + P4 + "   👑 Programmer : Mikel          " + P3 + "║")
     time.sleep(0.2)
-    print(P3 + "           ║" + P4 + "   📡 Channel    : ZVBZBZB2       " + P3 + "║")
+    print(P3 + "           ║" + P4 + "   📡 Channel    : @Mikel224       " + P3 + "║")
     time.sleep(0.2)
     print(P3 + "           ║" + P4 + "   🎯 Target     : TikTok Users   " + P3 + "║")
     time.sleep(0.2)
@@ -139,7 +139,7 @@ def TikTok(user):
         # يوزر متاح → بنفسجي وردي
         print(f"{P4}╔══════════════════════════════════════════════════╗")
         print(f"{P4}║ {W}✅ GOOD USERNAME : {P}{user}")
-        print(f"{P4}║ {W}🔗 https://t.me/ZVBZBZB2")
+        print(f"{P4}║ {W}🔗 https://t.me/Mikel224")
         print(f"{P4}╚══════════════════════════════════════════════════╝")
         tlg = f'''
 🔥 صيد يوزرات مميزه 🔥
@@ -148,7 +148,7 @@ __________________Mikel_________________
 USER : {user}
 
 __________________Mikel________________
-قناتي تلي https://t.me/ZVBZBZB2 🔥
+قناتي تلي https://t.me/Mikel224 🔥
 يوزري @Mikel1d 🥶
 '''
         requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={tlg}')
