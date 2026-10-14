@@ -26,8 +26,6 @@ C="\033[1;36m" # Cyan
 W="\033[1;37m" # White
 E = "\033[0;90m" #رمادي
 #------------------logo---------------------#
-logo = pyfiglet.figlet_format("Mikel", font="slant")
-print(F + logo)
 
 banner = f"""
 {C}╔══════════════════════════════════════════╗
